@@ -31,7 +31,7 @@ unzip OpenCV-$version.zip
 cd opencv-$version
 mkdir build
 cd build
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_TBB=ON  -D WITH_V4L=ON  -D WITH_QT=ON -D WITH_OPENGL=ON ..
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_TBB=ON  -D WITH_V4L=ON  -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_CUDA=ON ..
 make -j32
 cp lib/cv2.so ../../../
 echo "OpenCV" $version "built"
